@@ -5,7 +5,7 @@ namespace CanCanNeedJJBong.Reverse.OpenTLBB;
 class Program
 {
     /// <summary>
-    /// 跳过天龙八部登录器
+    /// 跳过天龙八部登录器登录游戏
     /// </summary>
     /// <param name="args"></param>
     static void Main(string[] args)
