@@ -22,8 +22,14 @@ class Program
         // 启动目录设置，因为game.exe要读取dll文件等
         tlbbProcesstInfo.WorkingDirectory = "D:\\XTLBBCZ\\Bin";
 
-        Process.Start(tlbbProcesstInfo);
+        using (Process tlbbProcess = Process.Start(tlbbProcesstInfo))
+        {
+            Console.WriteLine("进程启动成功");
+            
+            tlbbProcess.WaitForExit();
+            
+            Console.WriteLine("进程已经退出");
+        }
         
-        Console.ReadLine();
     }
 }
